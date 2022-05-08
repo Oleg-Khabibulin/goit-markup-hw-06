@@ -154,11 +154,13 @@ img{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition: color 250ms var(--function-transition) ;
 }
 .heder-nav .heder-link:hover ,
 .heder-nav .heder-link:focus{
     color:var(--heder-accent-color);
-    transition: color 250ms var(--function-transition) ;
+    
 }
 /* <<<<<<<<<<<<<<<КОНТАКТИ>>>>>>>>>>>>>>>>>.. */
 
@@ -178,12 +180,14 @@ img{
     color: var(--heder-secondary-color);
     font-weight: 500;
     line-height: 1.14px;
-    letter-spacing: 0.02em;      
+    letter-spacing: 0.02em;     
+    
+    transition: color 250ms var(--function-transition) ;
 }
 .heder-contact .heder-link:hover ,
 .heder-contact .heder-link:focus{
     color:var(--heder-accent-color);
-    transition: color 250ms var(--function-transition) ;
+    
 }
 
 .heder-link{
@@ -272,14 +276,15 @@ img{
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;  
+    transition: color,   250ms var(--function-transition),
+    background-color 250ms var(--function-transition) ;
 }
 .hero-btn:hover{
     color: var(--main-btn-accent-color);
     background-color:var(--main-btn-color) ;
     font-family:Roboto, Tahoma , sans-serif; 
 
-    transition: color,   250ms var(--function-transition),
-    background-color 250ms var(--function-transition) ;
+   
 }
 /* <<<<<<<<<<<<<<<СКІЛИ>>>>>>>>>>>>>>>>>.. */
 
@@ -441,7 +446,7 @@ img{
    background-color: #FFFFFF;
    justify-content: center;
    align-items: center;
-   
+   transition: background-color 250ms var(--function-transition) ;
 }
 .team-soc-item + .team-soc-item{
     margin-left: 10px;
@@ -452,7 +457,7 @@ img{
 .team-soc-link:hover,
 .team-soc-link:focus{
     background-color:var(--main-btn-accent-color);
-    transition: background-color 250ms var(--function-transition) ;
+   
 }
 
 .team-soc-link:hover .team-soc-icon,
@@ -491,12 +496,13 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: border 250ms var(--function-transition),
+    border-radius 250ms var(--function-transition);
 }
 .client-soc-link:hover{
     border: 1px solid var(--main-btn-accent-color);
     border-radius: 4px;
-    transition: border 250ms var(--function-transition),
-    border-radius 250ms var(--function-transition);
+    
     
 }
 .client-soc-link:hover .client-soc-icon{
@@ -551,6 +557,7 @@ img{
     color: var(--footer-first-color);
     font-style: normal;
     line-height: 1.71;
+    transition: color 250ms var(--function-transition) ;
 }
 .adress{
     margin-bottom: 9px;
@@ -559,14 +566,14 @@ img{
 .footer-adress:hover,
 .footer-adress:focus{
     color:var(--footer-accent-color) ;
-    transition: color 250ms var(--function-transition) ;
+   
 }
 
 .footer-contact{
     color:  var(--footer-secondary-color);
     font-style: normal;
     line-height: 1.71;
-    
+    transition: color 250ms var(--function-transition) ;
 }
 .footer-item{
     display: block;
@@ -578,7 +585,7 @@ img{
 .footer-contact:hover,
 .footer-contact:focus{
     color:var(--footer-accent-color) ;
-    transition: color 250ms var(--function-transition) ;
+    
 }
 .footer-soc{
     margin-left: 70px;
@@ -628,6 +635,79 @@ img{
     transition: fill 250ms var(--function-transition) ;
 }
 
+
+
+
+.footer-modal-field{
+    margin-left: 93px;
+    
+}
+.footer-modal-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--footer-first-color);
+    margin-bottom: 20px;
+    
+}
+.footer-input{
+    width: 358px;
+    height: 50px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+    outline: none;
+    background-color: #2F303A;
+    margin-right: 12px;
+    
+}
+.footer-input{
+    color: var(--footer-first-color);
+}
+.footer-modal-btn{
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
+    min-width: 200px;
+
+    color: var(--main-hero-color);
+    background-color:var(--main-btn-accent-color) ;
+    font-family:Roboto, sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em; 
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-modal-btn:hover{
+    color: var(--main-btn-accent-color);
+    background-color:var(--main-btn-color) ;
+    font-family:Roboto, Tahoma , sans-serif; 
+
+    transition: color,   250ms var(--function-transition),
+    background-color 250ms var(--function-transition) ;
+}
+.footer-modal-icon{
+    margin-left: 10px;
+     fill: var(--footer-first-color);
+}
+.footer-modal-btn:hover .footer-modal-icon{
+    fill: var(--main-btn-accent-color);
+    transition: fill,   250ms var(--function-transition);
+}
+
+/* <<<<<<<<<<<<<<< МОДАЛЬНЕ ВІКНО>>>>>>>>>>>>>>>>>.. */
+
+
 .backdrop{
     position: fixed;
     top: 0;
@@ -642,6 +722,7 @@ img{
     min-height: 581px;
     background-color:var(--main-hero-color);
     border-radius: 4px;
+    padding: 40px;
 
     position: absolute;
     top: 50%;
@@ -655,15 +736,186 @@ img{
     right: 8px;
     width: 30px;
     height: 30px;
+    background-color: transparent;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.backdrop-icon{
+  
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-origin: border-box;
+    
+}
+.modal-close-btn:focus .backdrop-icon{
+    fill: var(--main-btn-accent-color);
+    transition: fill 250ms var(--function-transition) ;
 }
 .is-hidden{
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
 }
+.modal-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-first-color);
+    margin-bottom: 12px;
+}
+.modal-imput{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    padding-left: 42px;
+    outline: none;
+}
+.modal-coment{
+    width: 100%;
+    height: 100px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+    padding:12px 16px;
+    resize: none;
+    outline: none;
+}
+.modal-lable{
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
 
+.modal-text{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color:var(--main-secondary-color)
+}
+.checkbox{
+    
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--main-btn-accent-color);
+
+}
+.modal-text span{
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--main-first-color);
+    border-radius: 2px ;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-origin: border-box;
+}
+.modal-icon-check{
+    fill: transparent;
+}
+.input-check:checked ~.modal-text span{
+    background-color: var(--main-btn-accent-color);
+    border: none;
+}
+.input-check:checked ~.modal-text .modal-icon-check{
+    fill: var(--main-btn-color);
+}
+
+.modal-group{
+    position: relative;
+}
+.modal-icon-name{
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-20%);
+}
+.modal-imput:focus{
+    border-color: var(--main-btn-accent-color);
+    transition: border-color 250ms var(--function-transition) ;
+}
+.modal-coment:focus{
+    border-color: var(--main-btn-accent-color);
+    transition: border-color 250ms var(--function-transition) ;
+}
+.modal-imput:focus +.modal-icon-name{
+    fill: var(--main-btn-accent-color);
+    transition: fill 250ms var(--function-transition) ;
+}
+.modal-imput:focus +.modal-icon-tel{
+    fill: var(--main-btn-accent-color);
+    transition: fill 250ms var(--function-transition) ;
+}
+.modal-imput:focus +.modal-icon-mail{
+    fill: var(--main-btn-accent-color);
+    transition: fill 250ms var(--function-transition) ;
+}
+.modal-icon-tel{
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-20%);
+}
+.modal-icon-mail{
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-20%);
+}
+.modal-btn{
+   display: block;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
+    min-width: 200px;
+    margin-top: 30px;
+
+    color: var(--main-hero-color);
+    background-color:var(--main-btn-accent-color) ;
+    font-family:Roboto, sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;  
+    
+}
+.modal-btn:hover{
+    color: var(--main-btn-accent-color);
+    background-color:var(--main-btn-color) ;
+    font-family:Roboto, Tahoma , sans-serif; 
+
+    transition: color,   250ms var(--function-transition),
+    background-color 250ms var(--function-transition) ;
+    
+}
 
 /* <<<<<<<<<<<<<<<ПОРТФОЛІО>>>>>>>>>>>>>>>>>.. */
 
@@ -683,14 +935,14 @@ img{
 }
 .page-list-item{
     border-radius: 4px;
-    
+    transition: box-shadow 250ms var(--function-transition) ;
 }
 .page-list-item:hover,
 .page-list-item:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
     0px 1px 2px rgba(0, 0, 0, 0.08), 
     0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 250ms var(--function-transition) ;
+  
 }
 
 .page-aside{
@@ -705,10 +957,11 @@ img{
 }
 .page-aside-link{
     display: block; 
+    transition: box-shadow 250ms var(--function-transition) ; 
 }
 .page-aside-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: box-shadow 250ms var(--function-transition) ;  
+    
 }
 
 .page-aside-item:nth-child(3n){
@@ -756,7 +1009,6 @@ img{
     border: none;
     padding: 6px 22px;
 
-
     font-family:Roboto,  sans-serif;
     background-color: #F5F4FA;
     color: var(--main-first-color);
@@ -766,6 +1018,10 @@ img{
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+
+    transition: color 250ms var(--function-transition),
+    background-color 250ms var(--function-transition);
+    
     
 }
 .page-item:hover,
@@ -773,8 +1029,6 @@ img{
     font-family:Roboto , sans-serif;
     color: var(--main-hero-color);
     background-color:#2196F3;
-    transition: color 250ms var(--function-transition),
-    background-color 250ms var(--function-transition);
     
 }
 .page-img{
